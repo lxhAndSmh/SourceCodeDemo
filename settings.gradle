@@ -1,0 +1,2 @@
+include ':app', ':baselibrary'
+rootProject.name='SourceCodeDemo'

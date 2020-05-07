@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="WaterMarkView">
+        <attr name="water_mark_text_size" format="reference|dimension"/>
+        <attr name="water_mark_text_color" format="color|reference"/>
+        <attr name="water_mark_text_str" format="string|reference"/>
+    </declare-styleable>
+</resources>
