@@ -14,7 +14,7 @@ import androidx.annotation.RequiresApi
 import com.botpy.sourcecodedemo.R
 
 /**
- * 水印
+ * 仿企业微信水印功能
  * @author liuxuhui
  * @date 2020-05-07
  */
@@ -64,11 +64,9 @@ class WaterMarkView(context: Context?, attrs: AttributeSet?, defStyleAttr: Int, 
         while (height < viewHeight) {
             while(width < viewWidth) {
                 canvas?.save()
+                // 旋转角度
                 canvas?.rotate((-30).toFloat())
                 canvas?.drawText(textStr, width.toFloat(), height.toFloat(), textPaint)
-                canvas?.restore()
-                canvas?.save()
-                canvas?.rotate((30).toFloat())
                 canvas?.restore()
                 width += rect.width() + CommonUtil.dip2px(context, 30f)
             }
