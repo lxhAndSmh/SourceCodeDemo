@@ -19,6 +19,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--将本地服务设置成远程服务，可被其它服务调用-->
+        <service android:name=".service.BookService"
+            android:process=":remote"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="com.botpy.sourcecodedemo.aidl.AIDL_Service"/>
+            </intent-filter>
+
+        </service>
     </application>
 
 </manifest>
